@@ -12,3 +12,7 @@ java –XX:+UseConcMarkSweepGC -XX:+PrintGC  -XX:+PrintHeapAtGC  -XX:+PrintGCDet
 
 ## Executar com log do GC Java 14
 java -Xlog:all:log/gc14-1.log com.teste.ValidaCPFv1
+
+
+## Habilitar o PrintInLining
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintInlining com.teste.ValidaCPFv1 > log/v1-inline.log
